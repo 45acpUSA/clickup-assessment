@@ -1,0 +1,25 @@
+.header {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+
+  &_main {
+    font-size: 80px;
+    line-height: 110%;
+  }
+
+  &_sub {
+    font-size: 40px;
+    line-height: 130%;
+  }
+}
+
+.text {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+
+  &_hl {
+    font-weight: 800;
+  }
+}

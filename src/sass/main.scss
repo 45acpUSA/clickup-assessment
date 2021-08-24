@@ -1,1 +1,14 @@
-@import "components/base"
+// Base
+@import "base/reset";
+@import "base/typography";
+
+// Components
+@import "components/buttons";
+
+// Layout
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+
+// Theme
+@import "theme/default";

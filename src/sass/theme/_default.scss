@@ -1,0 +1,49 @@
+.blue {
+  background: #2D9CDB;
+
+  &_light {
+    opacity: 0.1;
+  }
+}
+
+.green {
+  background: #68C9BA;
+
+  &_light {
+    opacity: 0.1;
+  }
+}
+
+.pink {
+  background: #F063B8;
+
+  &__oval {
+    width: 20px;
+    height: 35px;
+
+    border-radius: 20px;
+  }
+
+  &_light {
+    opacity: 0.1;
+  }
+
+  &_medium {
+    opacity: 0.15;
+  }
+}
+
+.purple {
+  background: #9C69E2;
+
+  &__circle {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 20px;
+  }
+
+  &_light {
+    opacity: 0.1;
+  }
+}
