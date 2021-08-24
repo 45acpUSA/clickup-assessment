@@ -54,9 +54,11 @@
  */
 
 // General
-var { gulp, parallel, series, src, watch } = require('gulp');
+var { dest, gulp, parallel, series, src, watch } = require('gulp');
 var del = require('del');
 var header = require('gulp-header');
+var rename = require('gulp-rename');
+var package = require('./package.json');
 
 // Styles
 var sass = require('gulp-sass')(require('node-sass'));
