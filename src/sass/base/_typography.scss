@@ -4,11 +4,13 @@
   font-weight: bold;
 
   &_main {
+    @extend .header;
     font-size: 80px;
     line-height: 110%;
   }
 
   &_sub {
+    @extend .header;
     font-size: 40px;
     line-height: 130%;
   }
@@ -20,6 +22,7 @@
   font-weight: 500;
 
   &_hl {
+    @extend .text;
     font-weight: 800;
   }
 }

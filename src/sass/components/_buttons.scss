@@ -2,15 +2,18 @@
   border-radius: 50px;
 
   &_light {
+    @extend .button;
     background: #FFFFFF;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   }
 
   &_pink {
+    @extend .button;
     background: #F063B8;
   }
 
   &_purple {
+    @extend .button;
     background: #9C69E2;
   }
 }

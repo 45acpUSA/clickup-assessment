@@ -2031,6 +2031,15 @@ gulp-sass@^5.0.0:
     transfob "^1.0.0"
     vinyl-sourcemaps-apply "^0.2.1"
 
+gulp-svgmin@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/gulp-svgmin/-/gulp-svgmin-4.0.1.tgz#27b1d4f47532f75f35b52893220001b6f05667b0"
+  integrity sha512-MLFqlN8sP4LqyvgzYXomDQ3S8HwYRe6wzuQn7cd+yZ4Tb54eN+4l24Iyz9Z8Q2daPSpc1v49rvv6u9/qpAHoWQ==
+  dependencies:
+    lodash.clonedeep "^4.5.0"
+    plugin-error "^1.0.1"
+    svgo "^2.3.1"
+
 gulp@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/gulp/-/gulp-4.0.2.tgz#543651070fd0f6ab0a0650c6a3e6ff5a7cb09caa"
@@ -2755,6 +2764,11 @@ lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
+
+lodash.clonedeep@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
+  integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
 lodash.isfinite@^3.3.2:
   version "3.3.2"
@@ -4549,7 +4563,7 @@ sver-compat@^1.5.0:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
-svgo@^2.3.0:
+svgo@^2.3.0, svgo@^2.3.1:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-2.4.0.tgz#0c42653101fd668692c0f69b55b8d7b182ef422b"
   integrity sha512-W25S1UUm9Lm9VnE0TvCzL7aso/NCzDEaXLaElCUO/KaVitw0+IBicSVfM1L1c0YHK5TOFh73yQ2naCpVHEQ/OQ==

@@ -66,6 +66,9 @@ var postcss = require('gulp-postcss');
 var prefix = require('autoprefixer');
 var minify = require('cssnano');
 
+// SVGs
+var svgmin = require('gulp-svgmin');
+
 // BrowserSync
 var browserSync = require('browser-sync');
 
@@ -118,6 +121,19 @@ var buildStyles = function (done) {
 			})
 		]))
 		.pipe(dest(paths.styles.output));
+
+};
+
+// Optimize SVG files
+var buildSVGs = function (done) {
+
+	// Make sure this feature is activated before running
+	if (!settings.svgs) return done();
+
+	// Optimize SVG files
+	return src(paths.svgs.input)
+		.pipe(svgmin())
+		.pipe(dest(paths.svgs.output));
 
 };
 
@@ -174,7 +190,7 @@ exports.default = series(
 	cleanDist,
 	parallel(
 		buildStyles,
-		// buildSVGs,
+		buildSVGs,
 		copyFiles
 	)
 );
