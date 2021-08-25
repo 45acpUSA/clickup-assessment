@@ -11,6 +11,26 @@
     
     justify-content: space-between;
     align-items: center;
+
+    &_item {
+      @extend .text;
+  
+      display: block;
+      flex: 0 1 auto;
+      list-style-type: none;
+      color: #4B5D68;
+  
+      &:active {
+        color: #212353;
+        font-weight: 800;
+      }
+  
+      // For Demo purposes - showing what the above pseudo class should be doing
+      &_active {
+        color: #212353;
+        font-weight: 800;
+      }
+    }
   }
 
   &__list {
@@ -19,25 +39,13 @@
 
     list-style: none;
     line-height: 250%;
-  }
 
-  &__item {
-    @extend .text;
+    &_item {
+      @extend .text;
 
-    display: block;
-    flex: 0 1 auto;
-    list-style-type: none;
-    color: #4B5D68;
-
-    &:active {
+      font-weight: normal;
+      line-height: 250%;
       color: #212353;
-      font-weight: 800;
-    }
-
-    // For Demo purposes - showing what the above pseudo class should be doing
-    &_active {
-      color: #212353;
-      font-weight: 800;
     }
   }
 }
