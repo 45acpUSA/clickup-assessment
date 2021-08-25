@@ -1,19 +1,14 @@
 // Abstracts
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/functions";
+@use "abstracts";
 
 // Base
-@import "base/reset";
-@import "base/typography";
+@use "base";
 
 // Components
-@import "components/buttons";
+@use "components";
 
 // Layout
-@import "layout/footer";
-@import "layout/header";
-@import "layout/navigation";
+@use "layout";
 
 // Theme
-@import "theme/default";
+@use "theme";

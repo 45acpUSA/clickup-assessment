@@ -24,7 +24,7 @@ button {
     flex-wrap: wrap;
     width: 100%;
   }
-  @each $modifier , $breakpoint in $map-grid-props {
+  @each $modifier, $breakpoint in $map-grid-props {
     @include create-col-classes($modifier, $grid__cols, $breakpoint);
   }
 }
