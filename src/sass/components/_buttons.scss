@@ -1,8 +1,17 @@
 .button {
   border-radius: 50px;
 
+  &__text {
+    @extend .text;
+    
+    text-align: center;
+    color: #212353;
+    font-weight: 800;
+  }
+
   &_light {
     @extend .button;
+
     background: #FFFFFF;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   }
