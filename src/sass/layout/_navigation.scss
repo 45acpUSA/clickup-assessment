@@ -13,6 +13,14 @@
     align-items: center;
   }
 
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    line-height: 250%;
+  }
+
   &__item {
     @extend .text;
 
@@ -26,7 +34,7 @@
       font-weight: 800;
     }
 
-    // For Demo purposes
+    // For Demo purposes - showing what the above pseudo class should be doing
     &_active {
       color: #212353;
       font-weight: 800;
