@@ -11,3 +11,34 @@ $map-grid-props: (
   '-lg': $grid__bp-lg,
   '-xl': $grid__bp-xl
 );
+
+// $utilities: () !default;
+  
+// $utilities: map-merge(
+//   (
+//     "justify-content": (
+//       responsive: true,
+//       property: justify-content,
+//       values: (
+//         start: flex-start,
+//         end: flex-end,
+//         center: center,
+//         between: space-between,
+//         around: space-around,
+//         evenly: space-evenly,
+//       )
+//     ),
+//     "align-items": (
+//       responsive: true,
+//       property: align-items,
+//       values: (
+//         start: flex-start,
+//         end: flex-end,
+//         center: center,
+//         baseline: baseline,
+//         stretch: stretch,
+//       )
+//     ),
+//   ),
+//   $utilities
+// )
