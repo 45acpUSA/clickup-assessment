@@ -2,17 +2,28 @@
   font-family: Helvetica;
   font-style: normal;
   font-weight: bold;
+  color: #212353;
 
   &_main {
     @extend .header;
+
     font-size: 80px;
     line-height: 110%;
   }
 
   &_sub {
     @extend .header;
+
     font-size: 40px;
     line-height: 130%;
+  }
+
+  &_company {
+    @extend .header;
+
+    font-size: 20px;
+    line-height: 160%;
+    text-align: left;
   }
 }
 
@@ -22,4 +33,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: 160%;
+  color: #4B5D68;
+
+  &__nav-category {
+    @extend .text;
+
+    font-weight: 900;
+    color: #212353;
+  }
 }
