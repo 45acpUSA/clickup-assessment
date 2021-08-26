@@ -17,14 +17,6 @@
     font-size: 40px;
     line-height: 130%;
   }
-
-  &_company {
-    @extend .header;
-
-    font-size: 20px;
-    line-height: 160%;
-    text-align: left;
-  }
 }
 
 .text {

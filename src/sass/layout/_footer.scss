@@ -3,6 +3,15 @@
 
   width: 95%;
 
+  &__company {
+    @extend .header;
+
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 160%;
+    text-align: left;
+  }
+
   &__content {
     align-items: flex-start;
 
