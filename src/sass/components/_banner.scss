@@ -1,0 +1,36 @@
+.info {
+  @extend .container-fluid;
+
+  background-color: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+  width: 80%;
+
+  &__img {
+    // width: 477px;
+    width: 90%;
+
+    // @media screen and (min-width: #{$grid__bp-lg}px) and (max-width: #{$grid__bp-xl}px) {
+    //   width: 
+    // } 
+  }
+
+  &__header {
+    @extend .header;
+
+    font-size: 40px;
+    line-height: 130%;
+  }
+
+  &__text {
+    @extend .text;
+
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: #{$grid__bp-md}px) {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+  }
+}

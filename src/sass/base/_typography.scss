@@ -4,40 +4,15 @@
   font-weight: bold;
   color: #212353;
 
-  &_main {
-    @extend .header;
-
-    line-height: 110%;
-
-    @media screen and (min-width: #{$grid__bp-xl}px) {
-      font-size: 80px;
-    }
-
-    @media screen and (min-width: #{$grid__bp-lg}px) and (max-width: #{$grid__bp-xl}px) {
-      font-size: 72px;
-    }
-
-    @media screen and (min-width: #{$grid__bp-md}px) and (max-width: #{$grid__bp-lg}px) {
-      font-size: 64px;
-      text-align: center;
-    }
-
-    @media screen and (min-width: #{$grid__bp-sm}px) and (max-width: #{$grid__bp-md}px) {
-      font-size: 56px;
-      text-align: center;
-    }
-
-    @media screen and (max-width: #{$grid__bp-sm}px) {
-      font-size: 48px;
-      text-align: center;
-    }
-  }
-
   &_sub {
     @extend .header;
 
     font-size: 40px;
     line-height: 130%;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: #{$grid__bp-lg}px) {
+    text-align: center;
   }
 }
 
