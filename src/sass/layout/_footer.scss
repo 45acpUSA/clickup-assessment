@@ -3,20 +3,31 @@
 
   width: 95%;
 
-  &__address {
-    @extend .text;
+  &__content {
+    align-items: baseline;
 
-    line-height: 180%;
-    letter-spacing: 0.01em;
-    color: #212353;
-  }
-
-  &__contact-info {
-    @extend .text;
-
-    line-height: 180%;
-    letter-spacing: 0.01em;
-    color: #212353;
-    font-weight: normal;
+    &_address {
+      @extend .text;
+  
+      line-height: 180%;
+      letter-spacing: 0.01em;
+      color: #212353;
+    }
+  
+    &_contact-info {
+      @extend .text;
+  
+      line-height: 180%;
+      letter-spacing: 0.01em;
+      color: #212353;
+      font-weight: normal;
+    }
+  
+    &_social-media {
+      margin: 0;
+      justify-content: space-between;
+      align-items: baseline;
+      max-width: 30%;
+    }
   }
 }
