@@ -1,8 +1,6 @@
 .footer {
   @extend .container-fluid;
 
-  width: 90%;
-
   &__company {
     @extend .header;
 
@@ -36,7 +34,11 @@
       margin: 0;
       justify-content: space-between;
       align-items: baseline;
-      max-width: 30%;
+      width: 178px;
+
+      @media screen and (min-width: #{$grid__bp-md}px) and (max-width: #{$grid__bp-lg}px) {
+        width: 136px;
+      }
     }
   }
 }
