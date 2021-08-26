@@ -10,13 +10,13 @@
   
       @media screen and (min-width: #{$grid__bp-xl}px) {
         width: 885px;
-        left: 550px;
+        left: 450px;
         top: 300px;
       }
   
       @media screen and (min-width: #{$grid__bp-lg}px) and (max-width: #{$grid__bp-xl}px) {
         width: 600px;
-        left: 550px;
+        left: 400px;
         top: 350px;
       }
     }
@@ -36,7 +36,8 @@
       }
 
       @media screen and (max-width: #{$grid__bp-sm}px) {
-        width: 500px;
+        width: 450px;
+        overflow: hidden;
       }
     }
   }
