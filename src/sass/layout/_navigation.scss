@@ -2,7 +2,7 @@
   &__bar {
     margin: 0;
     padding: 0;
-    width: 40%;
+    width: 322px;
 
     list-style: none;
 
@@ -36,6 +36,18 @@
         font-weight: 800;
       }
     }
+
+    @media screen and (min-width: #{$grid__bp-sm}px) and (max-width: #{$grid__bp-md}px) {
+      width: 278px;
+    }
+
+    // @media screen and (min-width: #{$grid__bp-xl}px) {
+    //   width: 322px;
+    // }
+
+    // @media screen and (min-width: #{$grid__bp-lg}px) and (max-width: #{$grid__bp-xl}px) {
+    //   width: 278px;
+    // }
   }
 
   &__list {
