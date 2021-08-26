@@ -26,6 +26,11 @@
       font-size: 56px;
       text-align: center;
     }
+
+    @media screen and (max-width: #{$grid__bp-sm}px) {
+      font-size: 48px;
+      text-align: center;
+    }
   }
 
   &_sub {
@@ -51,15 +56,7 @@
     color: #212353;
   }
 
-  @media screen and (min-width: #{$grid__bp-md}px) and (max-width: #{$grid__bp-lg}px) {
-    text-align: center;
-  }
-
-  @media screen and (min-width: #{$grid__bp-sm}px) and (max-width: #{$grid__bp-md}px) {
-    text-align: center;
-  }
-
-  @media screen and (max-width: #{$grid__bp-sm}px) {
+  @media screen and (min-width: 0px) and (max-width: #{$grid__bp-lg}px) {
     text-align: center;
   }
 }
