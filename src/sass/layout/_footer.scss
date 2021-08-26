@@ -1,8 +1,6 @@
 .footer {
   @extend .container-fluid;
 
-  width: 95%;
-
   &__company {
     @extend .header;
 
