@@ -7,6 +7,11 @@
     text-align: center;
     color: #212353;
     font-weight: 800;
+
+    &_light {
+      @extend .button__text;
+      color: #fff;
+    }
   }
 
   &_light {
@@ -20,11 +25,15 @@
 
   &_pink {
     @extend .button;
+
     background: #F063B8;
   }
 
   &_purple {
     @extend .button;
+
     background: #9C69E2;
+    height: 80%;
+    width: 20%
   }
 }

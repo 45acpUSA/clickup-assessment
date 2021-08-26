@@ -1,3 +1,12 @@
 .headline {
-  background-image: url("../../svg/LCP.svg");
+  &__lcp {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    z-index: 9;
+  }
+
+  &__lcp-container {
+    display: flex;
+  }
 }

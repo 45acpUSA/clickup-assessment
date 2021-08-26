@@ -21,12 +21,16 @@
       color: #4B5D68;
   
       &:active {
+        @extend .nav__bar_item;
+
         color: #212353;
         font-weight: 800;
       }
   
       // For Demo purposes - showing what the above pseudo class should be doing
       &_active {
+        @extend .nav__bar_item;
+
         color: #212353;
         font-weight: 800;
       }
