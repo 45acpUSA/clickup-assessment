@@ -3,6 +3,7 @@
 
   &_light {
     @extend .blue;
+
     opacity: 0.1;
   }
 }
@@ -12,6 +13,7 @@
 
   &_light {
     @extend .green;
+
     opacity: 0.1;
   }
 }
@@ -21,6 +23,7 @@
 
   &__oval {
     @extend .pink;
+
     width: 20px;
     height: 35px;
 
@@ -29,11 +32,13 @@
 
   &_light {
     @extend .pink;
+
     opacity: 0.1;
   }
 
   &_medium {
     @extend .pink;
+
     opacity: 0.15;
   }
 }
@@ -43,6 +48,7 @@
 
   &__circle {
     @extend .purple;
+
     width: 20px;
     height: 20px;
 
@@ -51,6 +57,21 @@
 
   &_light {
     @extend .purple;
+
     opacity: 0.1;
+  }
+}
+
+.gray {
+  background: #212353;
+  opacity: 0.1;
+
+  &__circle {
+    @extend .gray;
+
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50px;
   }
 }
