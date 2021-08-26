@@ -19,6 +19,7 @@
       flex: 0 1 auto;
       list-style-type: none;
       color: #4B5D68;
+      cursor: pointer;
   
       &:active {
         @extend .nav__bar_item;
@@ -50,6 +51,7 @@
       font-weight: normal;
       line-height: 250%;
       color: #212353;
+      cursor: pointer;
     }
   }
 }
