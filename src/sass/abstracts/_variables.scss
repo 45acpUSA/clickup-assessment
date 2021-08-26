@@ -12,35 +12,12 @@ $map-grid-props: (
   '-xl': $grid__bp-xl
 );
 
-$limit: 12;
+$media_queries : (
+    'mobile'    : "only screen and (max-width: #{$grid__bp-md}px)",
+    'tablet'    : "only screen and (min-width: #{$grid__bp-md)}px and (max-width: #{$grid__bp-lg)}px",
+    'desktop'   : "only screen and (min-width: #{$grid__bp-lg + 1})px",
+    'landscape' : "screen and (orientation:landscape) ",    
+    'portrait'  : "screen and (orientation:portrait) "
+);
 
-// $utilities: () !default;
-  
-// $utilities: map-merge(
-//   (
-//     "justify-content": (
-//       responsive: true,
-//       property: justify-content,
-//       values: (
-//         start: flex-start,
-//         end: flex-end,
-//         center: center,
-//         between: space-between,
-//         around: space-around,
-//         evenly: space-evenly,
-//       )
-//     ),
-//     "align-items": (
-//       responsive: true,
-//       property: align-items,
-//       values: (
-//         start: flex-start,
-//         end: flex-end,
-//         center: center,
-//         baseline: baseline,
-//         stretch: stretch,
-//       )
-//     ),
-//   ),
-//   $utilities
-// )
+$limit: 12;

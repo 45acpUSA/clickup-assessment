@@ -35,6 +35,10 @@
 
     background: #9C69E2;
     height: 80%;
-    width: 20%
+    width: 170px;
+
+    @media screen and (min-width: 0px) and (max-width: #{$grid__bp-lg}px) {
+      align-self: center;
+    }
   }
 }

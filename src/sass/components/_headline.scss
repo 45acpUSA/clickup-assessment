@@ -1,12 +1,58 @@
 .headline {
+  @extend .container-fluid;
+
+  padding-top: 100px;
+  padding-bottom: 200px;
+
   &__lcp {
-    height: 100%;
-    width: 100%;
-    overflow: visible;
-    z-index: 9;
+    &_side {
+      position: absolute;
+  
+      @media screen and (min-width: #{$grid__bp-xl}px) {
+        width: 885px;
+        left: 550px;
+        top: 300px;
+      }
+  
+      @media screen and (min-width: #{$grid__bp-lg}px) and (max-width: #{$grid__bp-xl}px) {
+        width: 600px;
+        left: 550px;
+        top: 350px;
+      }
+    }
+
+    &_top {
+      position: relative;
+      margin-right: auto;
+      margin-left: auto;
+      align-self: center;
+
+      @media screen and (min-width: #{$grid__bp-md}px) and (max-width: #{$grid__bp-lg}px) {
+        width: 600px;
+      }
+
+      @media screen and (min-width: #{$grid__bp-sm}px) and (max-width: #{$grid__bp-md}px) {
+        width: 550px;
+      }
+
+      @media screen and (max-width: #{$grid__bp-sm}px) {
+        width: 500px;
+      }
+    }
   }
 
-  &__lcp-container {
+
+
+  &__header {
+    max-width: 50%;
+  }
+
+  &__text {
+    max-width: 40%;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: #{$grid__bp-lg}px) {
     display: flex;
+    flex-direction: column;
   }
 }
