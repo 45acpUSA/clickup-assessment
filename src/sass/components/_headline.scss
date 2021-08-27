@@ -7,16 +7,17 @@
   &__lcp {
     &_side {
       position: absolute;
-  
+      left: 30%;
+
       @media screen and (min-width: #{$grid__bp-xl}px) {
-        width: 885px;
-        left: 450px;
+        width: 55%;
+        left: 35%;
         top: 300px;
       }
   
       @media screen and (min-width: #{$grid__bp-lg}px) and (max-width: #{$grid__bp-xl}px) {
-        width: 600px;
-        left: 400px;
+        width: 50%;
+        left: 40%;
         top: 350px;
       }
     }

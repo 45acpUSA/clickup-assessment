@@ -4,13 +4,6 @@
   font-weight: bold;
   color: #212353;
 
-  &_sub {
-    @extend .header;
-
-    font-size: 40px;
-    line-height: 130%;
-  }
-
   @media screen and (min-width: 0px) and (max-width: #{$grid__bp-lg}px) {
     text-align: center;
   }

@@ -34,3 +34,35 @@
     width: auto;
   }
 }
+
+.features-title {
+  @extend .container-fluid;
+
+  position: relative;
+  width: 50%;
+  left: 15%;
+  
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  &__header {
+    @extend .header;
+
+    font-size: 40px;
+    line-height: 130%;
+
+    text-align: center;
+  }
+
+  &__text {
+    @extend .text;
+
+    font-size: 18px;
+
+    text-align: center;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: #{$grid__bp-md}px) {
+    left: 25%
+  }
+}
