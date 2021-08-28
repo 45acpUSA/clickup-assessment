@@ -24,14 +24,26 @@
     &_q1 {
       @extend .tile__img;
 
-      padding-top: 5%;
+      margin-bottom: 10%;
     }
 
     &_q2 {
       @extend .tile__img;
 
       right: 15%;
-      padding-bottom: 5%;
+      margin-bottom: 35%;
+    }
+
+    &_q3 {
+      @extend .tile__img;
+
+      // right: 15%;
+    }
+
+    &_q4 {
+      @extend .tile__img;
+
+
     }
   }
 
@@ -59,7 +71,7 @@
     border-radius: 50px;
 
     position: relative;
-    // width: 442px;
+    width: 375px;
     height: 358px;
     padding-top: 10%;
     padding-right: 25%;
@@ -86,7 +98,7 @@
       @extend .tile__content;
 
       background-color: #EFF9F8;
-      right: 12%;
+      right: 15%;
 
       &:after {
         @extend .tile__content:after;
@@ -99,7 +111,7 @@
       @extend .tile__content;
       
       background-color: #F5EFFC;
-      right: 15%;
+      right: 17%;
 
       &:after {
         @extend .tile__content:after;
@@ -111,24 +123,26 @@
     &_pink {
       @extend .tile__content;
       
-      background-color: #F063B8;
+      background-color: #FEF0F8;
+      right: 17%;
 
       &:after {
         @extend .tile__content:after;
 
-        background-color: #F063B8;
+        background-color: #FEF0F8;
       }
     }
 
     &_blue {
       @extend .tile__content;
       
-      background-color: #2D9CDB;
+      background-color: #EAF5FB;
+      right: 17%;
 
       &:after {
         @extend .tile__content:after;
 
-        background-color: #2D9CDB;
+        background-color: #EAF5FB;
       }
     }
   }
@@ -144,13 +158,7 @@
     left: 30%;
     margin-top: 5%;
 
-    &_q1 {
-      @extend .tile__header;
-
-      left: 50%;
-    }
-
-    &_q2 {
+    &_q1, &_q2, &_q3, &_q4 {
       @extend .tile__header;
 
       left: 50%;
@@ -178,6 +186,19 @@
       @extend .tile__text;
 
       left: 50%;
+      margin-bottom: 15%;
+    }
+
+    &_q3 {
+      @extend .tile__text;
+
+      left: 50%;
+    }
+
+    &_q4 {
+      @extend .tile__text;
+
+      left: 50%;
     }
   }
 
@@ -195,13 +216,7 @@
 
     }
 
-    &_q1 {
-      @extend .tile__link;
-
-      left: 50%;
-    }
-
-    &_q2 {
+    &_q1, &_q2, &_q3, &_q4 {
       @extend .tile__link;
 
       left: 50%;
