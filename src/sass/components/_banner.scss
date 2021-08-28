@@ -93,12 +93,23 @@
     background-color: #fff;
     box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
     border-radius: 20px;
-    z-index: 99;
 
     &_gradient {
       @extend .testimonials__card;
 
       mask-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    }
+
+    @media screen and (min-width: #{$grid__bp-md}px) and (max-width: #{$grid__bp-lg}px) {
+      min-width: 550px;
+    }
+
+    @media screen and (min-width: #{$grid__bp-sm}px) and (max-width: #{$grid__bp-md}px) {
+      min-width: 300px;
+    }
+
+    @media screen and (max-width: #{$grid__bp-sm}px) {
+      min-width: 250px;
     }
   }
 
@@ -135,6 +146,28 @@
     }
   }
 
+  &__breadcrumbs-container{
+    @extend .container__col_1;
+
+    @media screen and (min-width: #{$grid__bp-xl}px) and (max-width: 1330px) {
+      flex-basis: 10%;
+    }
+
+    @media screen and (min-width: #{$grid__bp-sm}px) and (max-width: #{$grid__bp-xl}px) {
+      flex-basis: 12%
+    }
+
+    @media screen and (max-width: #{$grid__bp-sm}px) {
+      flex-basis: 15%
+    }
+  }
+
+  &__nav-container {
+    @extend .testimonials__breadcrumbs-container;
+
+    margin-right: 8%;
+  }
+
   &__breadcrumbs {
     @extend .container__row;
 
@@ -151,16 +184,8 @@
       border-radius: 100px;
     }
 
-    &:active {
-      @extend .testimonials__breadcrumbs_default;
-
-      width: 10px;
-      height: 10px;
-      background-color: #F063B8;
-    }
-
     // For demo purposes
-    &_active {
+    &:active, &_active {
       @extend .testimonials__breadcrumbs_default;
 
       width: 10px;
@@ -173,5 +198,7 @@
     @extend .container__row;
 
     justify-content: space-between;
+
+    
   }
 }
