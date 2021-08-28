@@ -32,6 +32,12 @@
     @extend .button;
 
     background: #F063B8;
+    height: 80%;
+    width: 170px;
+
+    @media screen and (min-width: 0px) and (max-width: #{$grid__bp-lg}px) {
+      align-self: center;
+    }
   }
 
   &_purple {
