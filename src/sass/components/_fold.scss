@@ -1,9 +1,12 @@
 .fold {
-  width: 100%;
+  width: 100vw;
   height: 2px;
   background-color: #9C69E2;
   opacity: 0.2;
 
   margin-top: 10%;
   margin-bottom: 10%;
+
+  position: relative;
+  left: calc(-53vw + 50%);
 }
