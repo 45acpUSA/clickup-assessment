@@ -15,6 +15,7 @@
     @extend .container__row;
 
     justify-content: space-between;
+    margin-bottom: 5%;
   }
 
   &__img {
@@ -37,13 +38,13 @@
     &_q3 {
       @extend .tile__img;
 
-      // right: 15%;
+      right: 10%;
     }
 
     &_q4 {
       @extend .tile__img;
 
-
+      right: 12%;
     }
   }
 
@@ -72,7 +73,7 @@
 
     position: relative;
     width: 375px;
-    height: 358px;
+    height: 300px;
     padding-top: 10%;
     padding-right: 25%;
 
@@ -193,6 +194,7 @@
       @extend .tile__text;
 
       left: 50%;
+      margin-bottom: 30%;
     }
 
     &_q4 {
