@@ -49,22 +49,50 @@
   }
 
   &__shape {
-    position: relative;
+    position: absolute;
+    z-index: 5;
 
-    &_q1 {
+    &_q1-kidney {
       @extend .tile__shape;
+
+      right: 5%;
+      top: 5%;
+    }
+
+    &_q1-oval {
+      @extend .tile__shape;
+
+      z-index: 6;
+
+      right: 30%;
+      top: 15%
     }
 
     &_q2 {
       @extend .tile__shape;
+
+      right: 5%;
+      bottom: 5%;
     }
 
     &_q3 {
       @extend .tile__shape;
+
+      right: 5%;
+      top: 10%;
     }
 
-    &_q4 {
+    &_q4-kidney {
       @extend .tile__shape;
+
+      top: 5%;
+    }
+
+    &_q4-oval {
+      @extend .tile__shape;
+
+      right: 10%;
+      bottom: 10%;
     }
   }
   
@@ -159,6 +187,8 @@
     left: 30%;
     margin-top: 5%;
 
+    z-index: 9;
+
     &_q1, &_q2, &_q3, &_q4 {
       @extend .tile__header;
 
@@ -175,6 +205,8 @@
     position: relative;
     left: 30%;
     margin-bottom: 10%;
+
+    z-index: 9;
     
     &_q1 {
       @extend .tile__text;
