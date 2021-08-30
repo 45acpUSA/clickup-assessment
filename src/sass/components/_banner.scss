@@ -27,6 +27,10 @@
     font-size: 18px;
   }
 
+  @media screen and (max-width: 1600px) {
+    padding-right: 5%;
+  }
+
   @media screen and (min-width: 0px) and (max-width: #{$grid__bp-md}px) {
     display: flex;
     flex-direction: column;
