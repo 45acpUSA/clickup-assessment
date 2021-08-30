@@ -4,6 +4,16 @@
   width: 100%;
   height: 100%;
 
+  @media screen and (min-width: 0px) and (max-width: 818px) {
+    overflow: hidden;
+  }
+
+  &:first-child {
+    @media screen and (max-width: #{$grid__bp_xl}px) {
+      margin-bottom: 5%;
+    }
+  }
+
   &__container {
     @extend .container-fluid;
 
@@ -16,6 +26,10 @@
 
     justify-content: space-between;
     margin-bottom: 5%;
+
+    @media screen and (max-width: #{$grid__bp_xl}px) {
+      flex-direction: column;
+    }
   }
 
   &__img {
@@ -117,6 +131,10 @@
       overflow: hidden;
       transform-origin: top left;
       border-radius: 50px;
+
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      word-break: break-word;
       
       -ms-transform: skew(-10deg, 0deg);
       -webkit-transform: skew(-10deg, 0deg);
@@ -194,6 +212,24 @@
 
       left: 50%;
     }
+
+    &_q2 {
+      @extend .tile__header_q2;
+
+      @media screen and (max-width: 900px) {
+        left: 10% !important;
+      }
+    }
+
+    @media screen and (max-width: #{$grid__bp_lg}px) {
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: 900px) {
+      position: absolute;
+      top: 5%;
+      left: 25%;
+    }
   }
 
   &__text {
@@ -207,6 +243,7 @@
     margin-bottom: 10%;
 
     z-index: 9;
+    text-overflow: ellipsis;
     
     &_q1 {
       @extend .tile__text;
@@ -234,6 +271,10 @@
 
       left: 50%;
     }
+
+    @media screen and (max-width: #{$grid__bp_lg}px) {
+      margin-bottom: 5%;
+    }
   }
 
   &__link {
@@ -247,13 +288,16 @@
 
     &_arrow {
       margin-left: 5%;
-
     }
 
     &_q1, &_q2, &_q3, &_q4 {
       @extend .tile__link;
 
       left: 50%;
+    }
+
+    @media screen and (max-width: #{$grid__bp_lg}px) {
+      left: 70%;
     }
   }
 }

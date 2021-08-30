@@ -10,9 +10,9 @@
       left: 30%;
 
       @media screen and (min-width: #{$grid__bp-xl}px) {
-        width: 55%;
+        width: 50%;
         left: 35%;
-        top: 300px;
+        top: 30%;
       }
   
       @media screen and (min-width: #{$grid__bp-lg}px) and (max-width: #{$grid__bp-xl}px) {

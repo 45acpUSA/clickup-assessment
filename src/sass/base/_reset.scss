@@ -3,6 +3,10 @@ body {
 	padding-left: 15%;
 	padding-right: 10%;
   background: #fff;
+
+	@media screen and (max-width: #{$grid__bp-lg}px) {
+		padding-left: 10%;
+	}
 }
 
 input,
